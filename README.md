@@ -40,10 +40,10 @@ pontiac
 # C. MULTI-MODEL SUBSETTING
 The task was to create a DataFrame named selected_cars containing only the records for the models Datsun 710,
 Lotus Europa, and Ferrari Dino while only showing the columns model, mpg, cyl, hp, and gear.
-The task was completed using Boolean Indexing in order to use the specific model name to search, and then the OR or |operator to be able to search for each model in one line. Finally, the ```loc``` function was used to extract only the specific columns needed.
+The task was completed using Boolean Indexing in order to use the specific model name to search, and then the OR or |operator to be able to search for each model in one line. Finally, the ```loc``` function was used to extract only the specific columns needed, finally the shape was shown for the required check.
 ```python
 selected_cars = cars.loc[(cars['Model']=='Datsun 710') | (cars['Model']=='Lotus Europa') | (cars['Model']=='Ferrari Dino'), ['Model', 'mpg', 'cyl', 'hp', 'gear']]
-selected_cars
+selected_cars.shape
 ```
 ## VERSION HISTORY
 September 3, 2026 - README file created <br>
